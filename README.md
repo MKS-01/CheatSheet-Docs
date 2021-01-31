@@ -1,7 +1,9 @@
-## HomeBrew <img src='https://cdn.svgporn.com/logos/homebrew.svg'  height="42" width="42"/>
+## Homebrew <img src='https://cdn.svgporn.com/logos/homebrew.svg'  height="42" width="42"/>
 
 ```shell
- $ brew update && brew upgrade
+$ brew install --cask file
+
+$ brew update && brew upgrade
 ```
 
 <hr/>
@@ -10,8 +12,7 @@
 ## Docker <img src='https://cdn.svgporn.com/logos/docker-icon.svg' height="auto" width="42" />
 
 #### Container?
-A container is simply another process on your machine that has been isolated from all other processes on the host machine. That isolation leverages kernel namespaces and cgroups, features that have been in Linux for a long time. Docker has worked to make these capabilities approachable and easy to use.
-
+A container is simply another process on your machine that has been isolated from all other processes on the host machine. 
 
 ##### Run
 
