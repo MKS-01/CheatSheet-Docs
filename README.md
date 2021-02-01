@@ -44,7 +44,7 @@ CMD ["node", "src/index.js"]
 2. Build the container image using the ```docker build``` command.
 
 ```shell
-docker build -t docker-name .
+$ docker build -t docker-name .
 ```
    
 The ```-t``` flag tags image. The ```.``` at the end of the ```docker build``` command tells that Docker should look for the ```Dockerfile``` in the current directory.
@@ -52,5 +52,40 @@ The ```-t``` flag tags image. The ```.``` at the end of the ```docker build``` c
 ##### Starting an App Container
 
 ```shell
-docker run -dp 3000:3000 docker-name
+$ docker run -dp 3000:3000 docker-name
+```
+
+##### Removing a container
+
+```shell
+$ docker ps  #get id of container
+
+$ docker stop <the-container-id> # Swap out <the-container-id> with the ID from docker ps
+
+$ docker rm <the-container-id>
+
+```
+
+###### Shorthand
+```shell
+$ docker rm -f <the-container-id>
+```
+
+##### Create a Volume
+
+```shell
+$ docker volume create volume-name
+#mount volume
+```
+
+##### Inspect a Volume
+
+```shell
+$ docker volume inspect volume-name
+```
+
+##### Check Logs
+
+```shell
+$ docker logs -f <container-id>
 ```
