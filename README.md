@@ -89,3 +89,22 @@ $ docker volume inspect volume-name
 ```shell
 $ docker logs -f <container-id>
 ```
+
+## NVM <img src='https://cdn.svgporn.com/logos/nodejs-icon.svg' height="42" width="42" />
+
+
+```shell
+#generate a .nvmrc file 
+$ node -v > .nvmrc
+
+$ nvm ls  #check node version installed on machine
+
+$ nvm install --lts
+
+$ nvm install node
+
+$ nvm use node_version
+
+$ nvm uninstall node_version
+
+```
